@@ -11,6 +11,6 @@ RUN a2enmod proxy_http
 RUN service apache2 restart
 
 #DEBUG
-RUN httpd -S
+RUN apache2ctl -S
 
 #RUN ["cp", "/etc/apache2/mods-available/rewrite.load", "/etc/apache2/mods-enabled/"]
