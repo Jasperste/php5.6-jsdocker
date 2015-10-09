@@ -6,6 +6,7 @@ RUN docker-php-ext-install intl
 RUN docker-php-ext-install pdo_mysql
 # Enable Apache2 rewrite module
 RUN a2enmod rewrite
+RUN a2enmod proxy
 RUN a2enmod proxy_http
 RUN service apache2 restart
 
